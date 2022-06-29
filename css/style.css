@@ -23,7 +23,8 @@ body {
     color: #838a8f;
     margin-top: 0; }
   body .flex {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   body .flex-25 {
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -124,8 +125,56 @@ body {
     color: white;
     width: 100%;
     padding: 20px 10px;
-    background: linear-gradient(#f17e00, #f59328);
+    background: linear-gradient(to right, #f17e00 0%, #f59328 100%);
     border-radius: 40px;
     border: none; }
     body .pay-button button.small {
       font-size: 16px; }
+  body #summary-credit-card, body #summary-purchase-order {
+    margin-top: 16px; }
+    body #summary-credit-card .box, body #summary-purchase-order .box {
+      background-color: #f0f2f3;
+      padding: 20px;
+      border-radius: 2.5px; }
+      body #summary-credit-card .box h3, body #summary-credit-card .box h4, body #summary-purchase-order .box h3, body #summary-purchase-order .box h4 {
+        text-align: center;
+        margin-top: 0;
+        color: #838a8f;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 10px; }
+      body #summary-credit-card .box h4, body #summary-purchase-order .box h4 {
+        text-align: left;
+        color: #2e3840; }
+      body #summary-credit-card .box p, body #summary-purchase-order .box p {
+        font-size: 13px; }
+        body #summary-credit-card .box p strong, body #summary-purchase-order .box p strong {
+          color: #2e3840; }
+      body #summary-credit-card .box .price, body #summary-purchase-order .box .price {
+        font-weight: bold; }
+      body #summary-credit-card .box.colored, body #summary-purchase-order .box.colored {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, #5c135c 0%, #800080 100%); }
+        body #summary-credit-card .box.colored p, body #summary-purchase-order .box.colored p {
+          margin: 0;
+          color: #deadde; }
+          body #summary-credit-card .box.colored p strong, body #summary-purchase-order .box.colored p strong {
+            color: white; }
+      body #summary-credit-card .box .instructions, body #summary-purchase-order .box .instructions {
+        color: #f17e00;
+        margin-bottom: 0; }
+
+@media only screen and (max-width: 1024px) {
+  body .flex-25 {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    body .flex-25 > div {
+      width: 48%; } }
+
+@media only screen and (max-width: 600px) {
+  body .flex-25 {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    body .flex-25 > div {
+      width: 100%; } }

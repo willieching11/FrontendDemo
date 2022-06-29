@@ -5,5 +5,6 @@ $(document).ready(function() {
         $(this).parent().addClass('selected');
         $("div.desc").hide();
         $("#payment-" + choice).show();
+        $("#summary-" + choice).show();
     });
 });

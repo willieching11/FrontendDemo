@@ -38,6 +38,7 @@ body {
     }
     .flex {
         display:flex;
+        justify-content: space-between;
     }
     .flex-25 {
         flex-wrap: wrap;
@@ -164,11 +165,74 @@ body {
         color: white;
         width: 100%;
         padding: 20px 10px;
-        background: linear-gradient($orange1, $orange2);
+        background: linear-gradient(to right, $orange1 0% ,$orange2 100%);
         border-radius: 40px;
         border: none;
         &.small {
             font-size: 16px;
+        }
+    }
+    #summary-credit-card, #summary-purchase-order {
+        margin-top: 16px;
+        .box {
+            background-color: #f0f2f3;
+            padding: 20px;
+            border-radius: 2.5px;
+            h3, h4 {
+                text-align: center;
+                margin-top: 0;
+                color: $light-text;
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            h4 {
+                text-align: left;
+                color: $dark-text;
+            }
+            p {
+                font-size: 13px;
+                strong {
+                    color: $dark-text;
+                }
+            }
+            .price {
+                font-weight: bold;
+            }
+            &.colored {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: linear-gradient(to right, $purple1 0% ,$purple2 100%);
+                p {
+                    margin: 0;
+                    color: $pink;
+                    strong {
+                        color: white;
+                    }
+                }
+            }
+            .instructions {
+                color: $orange;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    body .flex-25 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > div {
+            width: 48%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    body .flex-25 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > div {
+            width: 100%;
         }
     }
 }
