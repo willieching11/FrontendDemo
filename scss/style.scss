@@ -7,6 +7,7 @@ $gray: #f0f2f3;
 $pink: #deadde;
 $purple1: #5c135c;
 $purple2: #800080;
+
 body {
     font-family: "Poppins", sans-serif;
     .container {
@@ -19,10 +20,155 @@ body {
         font-weight: bold;
         text-align: center;
         border-bottom: 1px solid #cad3d8;
-        padding-bottom: 30px;
+        padding: 30px;
+        margin-bottom: 0;
         color: $dark-text;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: $dark-text;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 14px;
+        line-height: 16px;
+        color: $light-text;
+        margin-top: 0;
     }
     .flex {
         display:flex;
+    }
+    .flex-25 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > div {
+            width: 23%;
+        }
+    }
+    input, select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #c9d2d8;
+        margin-bottom: 10px;
+        border-radius: 2.5px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        color: $light-text;
+    }
+    #info {
+        #role {
+            width: 60%;
+            margin-left: 10px;
+        }
+        #state, input[name='zip'] {
+            margin-left: 10px;
+        }
+    }
+    #payment {
+        input[name='year'], input[name='CVC'] {
+            margin-left: 10px;
+        }
+    }
+    a {
+        text-decoration-color: $orange;
+        p {
+            color: $orange;
+        }
+    }
+    .check-box-field, .radio-field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 13px 0 0px;
+        .checkmark-label, .radio-label {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            user-select: none;
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            input:checked~.checkmark {
+                background-color: $orange;
+                border: 1px solid transparent;
+            }
+            input:checked~.checkmark:after {
+                display: block;
+            }
+            .tiny-text {
+                font-size: 13px;
+                line-height: 18px;
+            }
+            .checkmark {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: transparent;
+                border: 1px solid #c9d2d8;
+            }
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                left: 6px;
+                top: 0px;
+                width: 4px;
+                height: 12px;
+                border: solid #fff;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+                display: none;
+            }
+        }
+    }
+    .radio-field {
+        flex-wrap: wrap;
+        label:last-of-type {
+            margin-bottom: 10px;
+        }
+        .radio-label {
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+            background-color: #f8f8f8;
+            margin-bottom: 0;
+            .checkmark {
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+            }
+            &.selected {
+                background-color: transparent;
+                border: 1px solid $orange;
+            }
+        }
+    }
+    .pay-button button {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        width: 100%;
+        padding: 20px 10px;
+        background: linear-gradient($orange1, $orange2);
+        border-radius: 40px;
+        border: none;
+        &.small {
+            font-size: 16px;
+        }
     }
 }
