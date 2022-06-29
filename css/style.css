@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif; }
+  body .container {
+    max-width: 1148px;
+    margin: auto; }
+  body h1 {
+    font-size: 40px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #cad3d8;
+    padding-bottom: 30px;
+    color: #2e3840; }
+  body .flex {
+    display: flex; }

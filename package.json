@@ -1,0 +1,23 @@
+{
+  "name": "frontend-demo",
+  "version": "1.0.0",
+  "description": "Checkout Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willieching11/FrontendDemo.git"
+  },
+  "author": "Willie Ching",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willieching11/FrontendDemo/issues"
+  },
+  "homepage": "https://github.com/willieching11/FrontendDemo#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

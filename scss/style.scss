@@ -1,0 +1,28 @@
+$dark-text: #2e3840;
+$light-text: #838a8f;
+$orange: #f17e00;
+$orange1: #f17e00;
+$orange2: #f59328;
+$gray: #f0f2f3;
+$pink: #deadde;
+$purple1: #5c135c;
+$purple2: #800080;
+body {
+    font-family: "Poppins", sans-serif;
+    .container {
+        max-width: 1148px;
+        margin:auto;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 24px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #cad3d8;
+        padding-bottom: 30px;
+        color: $dark-text;
+    }
+    .flex {
+        display:flex;
+    }
+}
