@@ -171,6 +171,9 @@ body {
         &.small {
             font-size: 16px;
         }
+        &:hover {
+            cursor: pointer;
+        }
     }
     #summary-credit-card, #summary-purchase-order {
         margin-top: 16px;

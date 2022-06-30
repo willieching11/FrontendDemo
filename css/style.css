@@ -130,6 +130,8 @@ body {
     border: none; }
     body .pay-button button.small {
       font-size: 16px; }
+    body .pay-button button:hover {
+      cursor: pointer; }
   body #summary-credit-card, body #summary-purchase-order {
     margin-top: 16px; }
     body #summary-credit-card .box, body #summary-purchase-order .box {
